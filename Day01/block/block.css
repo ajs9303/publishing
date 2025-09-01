@@ -1,0 +1,21 @@
+h1 {
+  background-color: pink;
+}
+
+h2 {
+  background-color: skyblue;
+}
+
+.hello {
+  color: white;
+  background-color: green;
+  text-align: center;
+  font-size: 30px;
+}
+
+.bye {
+  color: white;
+  background-color: greenyellow;
+  text-align: center;
+  font-size: 30px;
+}

@@ -1,0 +1,24 @@
+button {
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 32px 15px 32px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.facebook {
+  color: white;
+  background-color: #1877f2;
+}
+
+.google {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+}
+
+.apple {
+  color: white;
+  background-color: black;
+}
