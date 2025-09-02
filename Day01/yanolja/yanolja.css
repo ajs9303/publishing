@@ -1,0 +1,23 @@
+.container {
+  width: 1280px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.card {
+  width: 305px;
+  margin-right: 20px;
+}
+
+.hotel {
+  width: 305px;
+  height: 407px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.name {
+  margin-left: 10px;
+  font-weight: 500;
+}
