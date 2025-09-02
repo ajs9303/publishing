@@ -1,0 +1,30 @@
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(197, 197, 197);
+  padding: 5px 10px 5px 10px;
+  margin: 3px;
+}
+
+h2 {
+  margin: 20px;
+}
+
+.container {
+  width: 688px;
+  display: flex;
+}
+
+.burger {
+  width: 216px;
+  height: 270px;
+  margin: 20px;
+}
+
+.image {
+  width: 216px;
+  height: 216px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 10px;
+  object-fit: cover;
+}
