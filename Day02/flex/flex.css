@@ -1,0 +1,32 @@
+section {
+  width: 1000px;
+  height: 1000px;
+  border: 1px solid red;
+
+  display: flex;
+  flex-direction: row; /* main 축을 정하는 속성 */
+  justify-content: center; /* main 축 위치 조정하는 속성 */
+  align-items: center; /* sub 축 위치를 조정하는 속성 */
+  gap: 30px; /* 사이의 거리를 조정하는 속성 */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.r {
+  background-color: red;
+}
+.o {
+  background-color: orange;
+}
+.y {
+  background-color: yellow;
+}
+.g {
+  background-color: green;
+}
+.b {
+  background-color: blue;
+}
