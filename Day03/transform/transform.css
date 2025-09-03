@@ -1,0 +1,19 @@
+button {
+  width: 115px;
+  height: 44px;
+  color: white;
+  border: none;
+  background: #00a5b9;
+  border-radius: 22px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 1s;
+}
+
+.order > i {
+  color: yellow;
+}
+
+.order:hover {
+  background-color: #01565f;
+}

@@ -1,0 +1,34 @@
+.box {
+  width: 600px;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.box > span {
+  font-weight: 700;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.box:hover > span {
+  color: white;
+}
+
+.box > .screen {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  transition: all 0.3s;
+  transform: translateY(-100%);
+}
+
+.box:hover > .screen {
+  transform: translateY(0%);
+}
