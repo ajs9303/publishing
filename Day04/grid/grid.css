@@ -1,0 +1,55 @@
+section {
+  width: 100vw;
+  height: 100vh;
+  /* 행렬 <= 바둑판화 */
+  display: grid;
+
+  /* repeat(줄 수, 1fr) */
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  position: relative;
+}
+
+.box > .mh {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.box > .mh > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30%;
+  height: 20%;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8%;
+  background-color: transparent;
+}
+
+.box:hover > .mh {
+  opacity: 1;
+}
