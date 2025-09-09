@@ -17,6 +17,7 @@
 .contact__contents__title {
   font-size: clamp(24px, 5vw, 40px);
   font-weight: 700;
+  color: navy;
 }
 
 .contact__contents__map > iframe {

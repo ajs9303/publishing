@@ -30,6 +30,7 @@
 .info__contents__title {
   font-size: clamp(24px, 5vw, 40px);
   font-weight: 700;
+  color: navy;
 }
 
 .info__contents__profile {
@@ -45,6 +46,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: navy;
 }
 
 .info__contents__profile__article__icon {
@@ -59,6 +61,7 @@
 .info__contents__profile__article__sub {
   font-size: clamp(14px, 3vw, 20px);
   font-weight: 600;
+  color: skyblue;
 }
 
 @media screen and (max-width: 768px) {

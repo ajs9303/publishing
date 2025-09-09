@@ -15,6 +15,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: navy;
 }
 
 .nav__home {
@@ -35,9 +36,19 @@ nav {
 
 .nav__menu {
   display: flex;
-  gap: clamp(10px, 2vw, 20px);
   cursor: pointer;
   font-size: clamp(14px, 1.5vw, 17px);
+  background-color: transparent;
+  color: skyblue;
+}
+
+.nav__menu > li {
+  padding: clamp(6px, 0.8vw, 10px) clamp(12px, 1.6vw, 20px);
+}
+
+.nav__menu > li:hover {
+  color: white;
+  background-color: navy;
 }
 
 @media screen and (max-width: 768px) {
@@ -54,6 +65,11 @@ nav {
     background-color: white;
     gap: 20px;
     padding: 20px;
+    text-align: center;
+  }
+
+  .nav__menu > li {
+    border-bottom: 1px solid black;
   }
 
   .nav__checkbox:checked + .nav__toggle + .nav__menu {

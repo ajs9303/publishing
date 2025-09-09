@@ -9,22 +9,23 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/color.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/info.css" />
     <link rel="stylesheet" href="css/work.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
     <header>
-      <nav class="main__color">
-        <a href="#top" class="nav__home main__color">PortFolio</a>
+      <nav>
+        <a href="#top" class="nav__home">PortFolio</a>
         <input type="checkbox" id="nav-toggle" class="nav__checkbox" />
         <label for="nav-toggle" class="nav__toggle">
           <i class="ri-menu-line"></i>
         </label>
-        <ul class="nav__menu sub__color">
+        <ul class="nav__menu">
           <li><a href="#info">WHO AM I</a></li>
           <li><a href="#work">WORK</a></li>
           <li><a href="#contact">CONTACT US</a></li>
@@ -39,47 +40,35 @@
       </section>
       <section id="info" class="info">
         <div class="info__contents">
-          <div class="info__contents__title main__color">WHO AM I</div>
+          <div class="info__contents__title">WHO AM I</div>
           <div class="info__contents__profile">
             <article class="info__contents__profile__article">
               <div class="info__contents__profile__article__icon">
                 <i class="ri-home-2-line"></i>
               </div>
-              <div class="info__contents__profile__article__title main__color">
-                HOME
-              </div>
-              <div class="info__contents__profile__article__sub sub__color">
-                Incheon
-              </div>
+              <div class="info__contents__profile__article__title">HOME</div>
+              <div class="info__contents__profile__article__sub">Incheon</div>
             </article>
             <article class="info__contents__profile__article">
               <div class="info__contents__profile__article__icon">
                 <i class="ri-walk-line"></i>
               </div>
-              <div class="info__contents__profile__article__title main__color">
-                HOBBY
-              </div>
-              <div class="info__contents__profile__article__sub sub__color">
-                Walk
-              </div>
+              <div class="info__contents__profile__article__title">HOBBY</div>
+              <div class="info__contents__profile__article__sub sub">Walk</div>
             </article>
             <article class="info__contents__profile__article">
               <div class="info__contents__profile__article__icon">
                 <i class="ri-cake-line"></i>
               </div>
-              <div class="info__contents__profile__article__title main__color">
-                Birth
-              </div>
-              <div class="info__contents__profile__article__sub sub__color">
-                03/22
-              </div>
+              <div class="info__contents__profile__article__title">Birth</div>
+              <div class="info__contents__profile__article__sub">03/22</div>
             </article>
           </div>
         </div>
       </section>
       <section id="work" class="work">
         <div class="work__contents">
-          <div class="work__contents__title main__color">WORK</div>
+          <div class="work__contents__title main">WORK</div>
           <div class="work__contents__project">
             <article class="work__contents__project__card">
               <picture class="work__contents__project__card__icon">
@@ -171,7 +160,7 @@
       </section>
       <section id="contact" class="contact">
         <div class="contact__contents">
-          <div class="contact__contents__title main__color">CONTACT US</div>
+          <div class="contact__contents__title">CONTACT US</div>
           <div class="contact__contents__map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d791.4161351972283!2d126.72342076965408!3d37.49224186233419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7d953e8a9f05%3A0x40d8ace83cab6a50!2z67aA7Y-JTUjtg4Dsm4w!5e0!3m2!1sko!2skr!4v1757382449812!5m2!1sko!2skr"
@@ -186,5 +175,17 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer__contents">
+        <p>© 2025. All rights reserved.</p>
+        <div class="footer__contents__links">
+          <a href="https://github.com/ajs9303/publishing">GitHub</a>
+          <a
+            href="https://www.notion.so/CI-CD-React-Node-25ef6d95660b80709633c5f130f2e116"
+            >Notion</a
+          >
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

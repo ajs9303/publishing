@@ -29,6 +29,7 @@
 .work__contents__title {
   font-size: clamp(24px, 5vw, 40px);
   font-weight: 700;
+  color: navy;
 }
 
 .work__contents__project {
@@ -63,6 +64,7 @@
   flex-direction: column;
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
+  border: none;
 
   gap: clamp(10px, 2%, 20px);
   transition: all 0.5s;
@@ -73,7 +75,7 @@
 }
 
 .work__contents__project__card__box__title {
-  font-size: clamp(18px, 2.5vw, 30px);
+  font-size: clamp(20px, 2.5vw, 30px);
   font-weight: 700;
 }
 
