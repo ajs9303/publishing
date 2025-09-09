@@ -1,0 +1,63 @@
+.hero {
+  height: 90vh;
+  background-color: black;
+  position: relative;
+}
+
+.hero > video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: absolute;
+  z-index: 1;
+}
+
+.hero > .screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 2;
+}
+
+.hero > .contents {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+  gap: 40px;
+  position: relative;
+  z-index: 5;
+}
+
+.hero > .contents > h1 {
+  font-size: 130px;
+}
+
+.hero > .contents > p {
+  color: #888;
+  line-height: 1.25;
+}
+
+.hero > .contents > button {
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  width: 400px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.hero > .contents > button:hover {
+  color: #888888;
+  background-color: white;
+}

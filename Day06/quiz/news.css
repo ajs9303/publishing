@@ -1,0 +1,54 @@
+.news {
+}
+
+.news > .contents {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 200px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 40px;
+}
+
+.news > .contents > h3 {
+  font-size: 24px;
+  color: #555555;
+  text-align: center;
+}
+
+.news > .contents > .wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.news > .contents > .wrap > .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.news > .contents > .wrap > .card > picture {
+  width: 240px;
+  height: 120px;
+}
+
+.news > .contents > .wrap > .card > picture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news > .contents > .wrap > .card > h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.news > .contents > .wrap > .card > p {
+  font-size: 13px;
+}
