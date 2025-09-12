@@ -1,0 +1,29 @@
+:root {
+  --m-color1: #f9f9f9;
+  --m-color2: #dbdbdb;
+  --m-color3: #656565;
+  --m-color4: #a5a5a5;
+  --m-color5: #333;
+  --m-color6: #555;
+  --m-color7: #023586;
+  --m-color8: #333;
+  --m-color9: rgba(255, 255, 255, 0.8);
+  --m-color10: #062f78;
+  --m-color11: #f5f6f7;
+  --m-color12: #0540a6;
+  --m-container-max-width: 1440px;
+  --m-container-padding: 20px;
+  --m-letter-spacing1: -0.25px;
+  --m-letter-spacing2: -3px;
+  --m-letter-spacing3: -0.4%;
+  --m-line-height1: 1.4;
+  --m-line-height2: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--m-container-max-width);
+  padding: 0 var(--m-container-padding);
+  margin: 0 auto;
+  position: relative;
+}

@@ -1,5 +1,4 @@
 header {
-  padding: clamp(10px, 2vw, 20px);
   background-color: white;
   position: fixed;
   width: 100%;
@@ -8,9 +7,10 @@ header {
 }
 
 nav {
-  width: 90%;
+  width: 100%;
   max-width: clamp(200px, 90vw, 1200px);
   margin: 0 auto;
+  padding: clamp(10px, 2vw, 20px);
 
   display: flex;
   justify-content: space-between;

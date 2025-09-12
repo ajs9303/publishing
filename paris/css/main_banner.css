@@ -1,0 +1,135 @@
+.main__banner {
+  width: 100%;
+  margin-top: 7vh;
+
+  position: relative;
+}
+
+.main__banner__inner > .main__slider {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main__banner__inner > .main__slider > input[type="radio"] {
+  display: none;
+}
+
+.main__banner__inner > .main__slider > .main__slides {
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+
+/* 한 화면에 3개씩 */
+.main__banner__inner > .main__slider > .main__slides > .main__slide {
+  width: calc(100% / 3);
+  flex-shrink: 0;
+}
+
+.main__banner__inner > .main__slider > .main__slides > .main__slide > a > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main__banner__inner > .main__slider > .main__buttons label {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 50px;
+  color: var(--m-color6);
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+.main__banner__inner > .main__slider > .main__navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.main__banner__inner > .main__slider > .main__navigation label {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--m-color2);
+  cursor: pointer;
+  display: block;
+}
+
+#main__slide1:checked ~ .main__slides {
+  transform: translateX(0%);
+}
+#main__slide2:checked ~ .main__slides {
+  transform: translateX(-33.333%);
+}
+#main__slide3:checked ~ .main__slides {
+  transform: translateX(-66.666%);
+}
+#main__slide4:checked ~ .main__slides {
+  transform: translateX(-100%);
+}
+#main__slide5:checked ~ .main__slides {
+  transform: translateX(-133.333%);
+}
+#main__slide6:checked ~ .main__slides {
+  transform: translateX(-166.666%);
+}
+
+#main__slide1:checked ~ .main__navigation > label[for="main__slide1"],
+#main__slide2:checked ~ .main__navigation > label[for="main__slide2"],
+#main__slide3:checked ~ .main__navigation > label[for="main__slide3"],
+#main__slide4:checked ~ .main__navigation > label[for="main__slide4"],
+#main__slide5:checked ~ .main__navigation > label[for="main__slide5"],
+#main__slide6:checked ~ .main__navigation > label[for="main__slide6"] {
+  background-color: var(--m-color7);
+}
+
+@media screen and (max-width: 768px) {
+  .main__banner__inner > .main__slider > .main__slides > .main__slide {
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  #main__slide1:checked ~ .main__slides {
+    transform: translateX(-100%);
+  }
+
+  #main__slide2:checked ~ .main__slides {
+    transform: translateX(-200%);
+  }
+
+  #main__slide3:checked ~ .main__slides {
+    transform: translateX(-300%);
+  }
+
+  #main__slide4:checked ~ .main__slides {
+    transform: translateX(-400%);
+  }
+
+  #main__slide5:checked ~ .main__slides {
+    transform: translateX(-500%);
+  }
+
+  #main__slide6:checked ~ .main__slides {
+    transform: translateX(-600%);
+  }
+
+  .main__banner__inner > .main__slider > .main__navigation {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}

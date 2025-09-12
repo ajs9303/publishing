@@ -1,0 +1,90 @@
+.sub__banner {
+  width: 100%;
+  margin-top: 7vh;
+}
+
+.sub__banner > .container {
+  width: 100%;
+}
+
+.sub__banner__inner > .sub__slider {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sub__banner__inner > .sub__slider > input[type="radio"] {
+  display: none;
+}
+
+.sub__banner__inner > .sub__slider > .sub__slides {
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+
+.sub__banner__inner > .sub__slider > .sub__slides > .sub__slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.sub__banner__inner > .sub__slider > .sub__slides > .sub__slide > a > img {
+  width: 100%;
+  display: block;
+}
+
+.sub__banner__inner > .sub__slider > .sub__buttons label {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  padding: 10px;
+  cursor: pointer;
+  z-index: 3;
+  font-size: 50px;
+  color: var(--m-color6);
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+.sub__banner__inner > .sub__slider > .sub__navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.sub__banner__inner > .sub__slider > .sub__navigation label {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--m-color2);
+  cursor: pointer;
+  display: block;
+}
+
+#sub__slide1:checked ~ .sub__slides {
+  transform: translateX(0%);
+}
+#sub__slide2:checked ~ .sub__slides {
+  transform: translateX(-100%);
+}
+
+#sub__slide1:checked ~ .sub__navigation > label[for="sub__slide1"],
+#sub__slide2:checked ~ .sub__navigation > label[for="sub__slide2"] {
+  background-color: var(--m-color7);
+}
+
+@media screen and (max-width: 768px) {
+  .sub__banner__inner > .sub__slider > .sub__navigation {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}
